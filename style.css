@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*  background-color:#f9d1ac;*/
+    background-image: url(photo-1523878288860-7ad281611901.avif);
+}
+
+.mainphoto {
+    height: 550px;
+}
+
+.animation {
+    opacity: 0;
+    animation-name: slideright;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideright {
+    0% {
+        transform: translatex(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translatex(0px);
+        opacity: 1;
+    }
+}
+
+.navanimation {
+    opacity: 0;
+    animation-name: slideup;
+    animation-duration: 4s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideup {
+    0% {
+        transform: translatey(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    background-color: #cccebb;
+    align-items: center;
+    height: 80px;
+}
+
+.left {
+    font-size: 35px;
+}
+
+nav ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 2.688rem;
+    font-size: 23px;
+}
+
+a:hover {
+    color: rgb(239, 73, 142);
+    font-size: 28px;
+}
+
+a:active {
+    color: black;
+}
+
+.om {
+    height: 35.625rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightmain {
+    height: auto;
+    margin-top: 1.25rem;
+
+}
+
+.leftmain {
+    font-weight: normal;
+    align-items: center;
+    display: flex;
+}
+
+.piyush {
+
+    margin-top: 0.938rem;
+    margin-bottom: 0.938rem;
+    margin-left: 9.688rem;
+}
+
+.name {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.extra {
+    height: 5.625rem;
+}
+
+/*about*/
+.about {
+    font-size: 55px;
+    text-align: center;
+    height: 150px;
+    line-height: 119px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image {
+    height: 400px;
+    width: 23rem;
+    margin-right: 6.25rem;
+    margin-left: 21.8rem;
+    border-radius: 0.625rem;
+}
+
+.photo {
+    border: 5px, solid, #FFF4B5;
+    border-radius: 3px;
+    height: 24.063rem;
+}
+
+
+
+.theory {
+    margin-right: 12.8rem;
+    margin-left: -0.5rem;
+    font-size: 24px;
+    
+}
+
+/*skills*/
+.skills {
+    font-size: 55px;
+    text-align: center;
+    height: 150px;
+    line-height: 119px;
+}
+
+
+.img {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.img2 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+/*contact*/
+.contactfont {
+    font-size: 35px;
+}
+
+.contactus {
+    display: flex;
+    justify-content: space-around;
+}
+
+.input {
+    height: 40px;
+    width: 310px;
+}
+
+.textarea {
+    width: 310px;
+    height: 100px;
+}
+
+.upper {
+    text-align: center;
+    font-size: 55px;
+}
+
+.location {
+    text-align: center;
+    font-size: 55px;
+}
+
+.add {
+    color: rgb(100 21 70);
+    font-size: 25px;
+}
+
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width:775px) {
+    .om {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        height: 300px;
+    }
+    
+    .extra {
+        display: none;
+    }
+    
+    .container {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        height: 400px;
+    }
+    
+    .mainphoto {
+        display: none;
+    }
+    
+    .theory {
+        margin: 20px;
+    }
+    
+    .photo {
+        height: 200px;
+        width: 200px;
+    }
+    
+    .image {
+        height: 200px;
+        display: flex;
+        width: 200px;
+    }
+    
+    .leftmain {
+        margin: 0px;
+    }
+    
+    .piyush {
+        margin: 0px;
+        text-align: center;
+    }
+    
+    .piyush .name {
+        font-size: 50px;
+    }
+    
+    .navigation {
+        flex-direction: column;
+    }
+    
+    li {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .skills {
+        line-height: 400px;
+    }
+}
+
+@media screen and (max-width:460px) {
+    .input {
+        width: 230px;
+    }
+    
+    .textarea {
+        width: 230px;
+    }
+    
+    .contactfont {
+        font-size: 20px;
+    }
+    
+    .img {
+        line-height: 500px;
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .img2 {
+        line-height: 800px;
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    .skills {
+        line-height: 622px;
+    }
+    
+    .img {
+        line-height: 882px;
+    }
+    
+    .img2 {
+        line-height: 890px;
+    }
+    
+    .pgh {
+        height: 300px;
+        width: 300px;
+    }
+    
+    .upper {
+        line-height: 280px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .image {
+        height: 385px;
+        margin-right: 6.25rem;
+        margin-left: 9.8rem;
+        border-radius: 0.625;
+    }
+    
+    .message {
+        padding: 40px;
+    }
+}
+@media screen and (max-width: 925px) {
+    .left {
+        font-size: 18px;
+    }
+
+    .image {
+        height: 385px;
+        margin-right: 3.25rem;
+        margin-left: 4.8rem;
+        border-radius: 0.625;
+    }
+
+    .img {
+        height: 942px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .img2 {
+        height: 942px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .photo {
+        height: 16.063rem;
+    }
+
+    .theory {
+        margin-right: 0.8rem;
+        margin-left: -2.5rem;
+        font-size: 20px;
+    }
+
+    .contactus {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+    }
+
+}
